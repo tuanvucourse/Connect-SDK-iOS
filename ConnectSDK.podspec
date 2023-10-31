@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
 
-    cast_version = "4.7.0"
+    # cast_version = "4.7.0"
     sp.dependency "google-cast-sdk"#, cast_version
     sp.framework = "GoogleCast"
     sp.xcconfig = {
