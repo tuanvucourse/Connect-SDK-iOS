@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
   s.author             = { "Connect SDK" => "support@connectsdk.com" }
   s.social_media_url   = "http://twitter.com/ConnectSDK"
-  s.platform     = :ios, "11.0"
-  s.ios.deployment_target = "11.0"
+  s.platform     = :ios, "14.0"
+  s.ios.deployment_target = "14.0"
   s.source       = { :git => "https://github.com/ConnectSDK/Connect-SDK-iOS.git",
                      :tag => s.version,
                      :submodules => true }
@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
 
-    cast_version = "2.7.1"
+    cast_version = "4.7.0"
     sp.dependency "google-cast-sdk", cast_version
     sp.framework = "GoogleCast"
     sp.xcconfig = {
