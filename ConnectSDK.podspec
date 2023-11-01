@@ -113,7 +113,7 @@ Pod::Spec.new do |s|
     sp.source_files = "#{cast_dir}/**/*.{h,m}"
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
-    sp.ios.deployment_target = "14.0"
+
     cast_version = "4.7.0"
     sp.dependency "google-cast-sdk", cast_version
     sp.framework = "GoogleCast"
