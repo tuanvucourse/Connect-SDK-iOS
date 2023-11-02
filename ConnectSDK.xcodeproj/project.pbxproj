@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -2517,7 +2517,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "core/ConnectSDK-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = ConnectSDK;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
@@ -2546,7 +2550,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "core/ConnectSDK-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = ConnectSDK;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
@@ -2558,6 +2566,7 @@
 		EECAED54193F611900D31F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
@@ -2567,6 +2576,7 @@
 		EECAED55193F611900D31F61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
