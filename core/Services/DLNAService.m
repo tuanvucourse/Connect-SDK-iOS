@@ -753,10 +753,10 @@ static const NSInteger kValueNotFound = -1;
         return 0;
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"HH:m:ss"];
+    [formatter setDateFormat:@"H:mm:ss.SSS"];
 
     NSDate *time = [formatter dateFromString:timeString];
-    NSDate *midnight = [formatter dateFromString:@"00:00:00"];
+    NSDate *midnight = [formatter dateFromString:@"00:00:00.000"];
 
     NSTimeInterval timeInterval = [time timeIntervalSinceDate:midnight];
 
